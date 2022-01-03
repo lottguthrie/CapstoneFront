@@ -116,14 +116,14 @@ const UserRegistration = (props) => {
 
                   <Form.Group >
                     <FloatingLabel label="Supervisor ID" className="mb-3" controlId="floatingTextarea">
-                    <Form.Control type="email" name="supervisor_id" onChange= {handleChange} required= {false}/>
+                    <Form.Control name="supervisor_id" onChange= {handleChange} required= {false}/>
                     </FloatingLabel>
 
                   </Form.Group>
 
                   <Form.Group>
                     <FloatingLabel className="mb-3" controlId="floatingSelect" label="Select Current Status" >
-                      <Form.Select  type="test" name="is_active" onChange= {(event) => submitForm(event, 1)} required= {true}>
+                      <Form.Select name="is_active" onChange= {(event) => submitForm(event, 1)} required= {true}>
                         <option>Current Employee?</option>
                         <option value="False">No</option>
                         <option value="True">Yes</option>
